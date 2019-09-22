@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>CV</title>
+</head>
+
+<body>
+  <header>
+    <h1>Andrei Chernukho</h1>
+  </header>
+
+  <main>
+    <section class="general-info">
+      <img src="assets/fotoAChernukho.jpeg" width="130" height="173" alt="photo">
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+        <p><strong>Phone number:</strong> +375 (29) 504-33-30</p>
+        <p><strong>E-mail:</strong> <a href="mailto:andrei.chernukho.86@gmail.com">andrei.chernukho.86@gmail.com</a>
+        </p>
+        <p><strong>Skype:</strong> chernuho1986</p>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>Self-motivated, organized and competent 'Junior Programmer' is looking for a suitable **JavaScript
+        position**,
+        where I can improve my skillset in web technologies to
+        develop and implement solutions to meet business needs.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Java SE</span>
+      <span>SQL</span>
+      <span>Git</span>
+      <span>Visual Studio Code</span>
+      <span>Intellij IDEA</span>
+      <span>Jira</span>
+      <span>MySQL</span>
+    </section>
+
+    <section class="examples">
+      <h2>Code examples (LATEST)</h2>
+      <pre><code>
+/**
+ * @param preferences - an array of integers. Indices of people, whom they love
+ * @returns number of love triangles
+ */
+module.exports = function getLoveTrianglesCount(preferences = []) {
+  let count = 0;
+
+  for (let i = 0; i &lt; preferences.length; i++) {
+    let spichoneeA = preferences[i];
+    let spichoneeB = preferences[spichoneeA - 1];
+    let spichoneeC = preferences[spichoneeB - 1];
+
+    let isDifferent = spichoneeA != spichoneeB && spichoneeB != spichoneeC && spichoneeA != spichoneeC;
+
+    if (spichoneeC - 1 == i && isDifferent) {
+      count++;
+    }
+  }
+
+  return count / 3;
+};
+       </code></pre>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <a href="https://javarush.ru/users/2021131">Javarush</a> tasks and games.
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>2019 <a href="https://www.codecademy.com/profiles/6185991363"><strong>Codecademy</strong></a></li>
+        <li>2019 <a href="https://javarush.ru/users/2021131"><strong>Javarush</strong></a></li>
+        <li>2018 <strong>QA Academy</strong>, Basics of Software Testing (Reference Letter)</li>
+        <li>2018 <strong>Streamline</strong>, General English Course at Intermediate level</li>
+        <li>2017 <strong>Streamline</strong>, General English Course at Pre-Intermediate level</li>
+        <li>2010 <strong>Belarusian National Technical University</strong>
+          Marketing, management and entrepreneurship faculty, Industrial Economics and Project Management</li>
+        <li>2008 <strong>Belarusian National Technical University</strong>
+          Mining engineering and engineering ecology faculty, Mining Machines</li>
+      </ul>
+    </section>
+
+    <section class="english">
+      <h2>English</h2>
+      <p><strong>Level:</strong> Intermediate.</p>
+    </section>
+  </main>
+</body>
+
+</html>
