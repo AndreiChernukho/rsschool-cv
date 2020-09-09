@@ -1,1 +1,1 @@
-https://andreichernukho.github.io/resume/cv
+https://andreichernukho.github.io/rsschool-cv/cv
